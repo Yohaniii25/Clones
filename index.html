@@ -5,15 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-------------------------------------------------------------bootsrap links------------------------------------------------------------------------>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-------------------------------------------------------------google fonts ----------------------------------------------------------------------------->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="..\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    --twitter-color: #50b7f5;
+    --twitter-background: #e6ecf0;
+  }
+  
+  .sidebarOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .sidebarOption .material-icons,
+  .fa-twitter {
+    padding: 20px;
+  }
+  
+  .sidebarOption h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  
+  .sidebarOption:hover {
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+    color: var(--twitter-color);
+    transition: color 100ms ease-out;
+  }
+  
+  .sidebarOption.active {
+    color: var(--twitter-color);
+  }
+
+    </style>
 
 </head>
 <body>
+    <!---------------------------------------------------------sidebar starts------------------------------------------------------------------------------->
 
+    <div class="sidebar">
+        <i class="fab fa-twitter"></i>
+        <div class="sidebarOption active">
+            <h2><span class="material-icons"> home </span>
+          Home</h2>
+        </div>
+  
+        <div class="sidebarOption">
+            <h2><span class="material-icons"> search </span>
+          Explore</h2>
+        </div>
+  
+        <div class="sidebarOption">
+            <h2><span class="material-icons"> notifications_none </span>
+          Notifications</h2>
+        </div>
+  
+        <div class="sidebarOption">
+            <h2><span class="material-icons"> mail_outline </span>
+          Messages</h2>
+        </div>
+  
+        <div class="sidebarOption">
+            <h2><span class="material-icons"> bookmark_border </span>
+          Bookmarks</h2>
+        </div>
+  
+        <div class="sidebarOption">
+            <h2><span class="material-icons"> list_alt </span>
+          Lists</h2>
+        </div>
+  
+        <div class="sidebarOption">
+            <h2><span class="material-icons"> perm_identity </span>
+          Profile</h2>
+        </div>
+  
+        <div class="sidebarOption">
+            <h2><span class="material-icons"> more_horiz </span>
+          More</h2>
+        </div>
+        <button class="sidebar__tweet">Tweet</button>
+      </div>
 
+        
+    <!---------------------------------------------------------sidebar ends------------------------------------------------------------------------------->
 </body>
+
+
 </html>
