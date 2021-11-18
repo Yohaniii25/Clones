@@ -1,1 +1,1 @@
-This is a clone for Twitter using HTML, css
+This is a clone for Twitter using HTML and css. 
